@@ -215,7 +215,7 @@ export default function EmployeeProfilesSection() {
             </div>
 
             <div className="mt-4 flex items-center justify-between">
-              <span className={`px-3 py-1 rounded-full text-xs font-medium ₹{getStatusColor(employee.status)}`}>
+              <span className={`px-3 py-1 rounded-full text-xs font-medium ${getStatusColor(employee.status)}`}>
                 {employee.status}
               </span>
               <div className="flex space-x-2">

@@ -285,7 +285,7 @@ export default function SalarySection() {
                   <span className="font-bold text-gray-900">₹{salary.netSalary.toLocaleString()}</span>
                 </td>
                 <td className="py-4 px-4">
-                  <span className={`flex items-center space-x-1 px-3 py-1 rounded-full text-sm ₹{getStatusColor(salary.status)}`}>
+                  <span className={`flex items-center space-x-1 px-3 py-1 rounded-full text-sm ${getStatusColor(salary.status)}`}>
                     {salary.status === "Paid" && <CreditCard className="w-4 h-4" />}
                     {salary.status === "Pending" && <Calendar className="w-4 h-4" />}
                     {salary.status === "Failed" && <AlertTriangle className="w-4 h-4" />}

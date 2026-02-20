@@ -209,12 +209,12 @@ export default function ManagersSection() {
                   </div>
                 </td>
                 <td className="py-4 px-4">
-                  <span className={`px-2 py-1 rounded-full text-xs font-medium ₹{getPerformanceColor(manager.performance)}`}>
+                  <span className={`px-2 py-1 rounded-full text-xs font-medium ${getPerformanceColor(manager.performance)}`}>
                     {manager.performance}
                   </span>
                 </td>
                 <td className="py-4 px-4">
-                  <span className={`flex items-center space-x-1 px-3 py-1 rounded-full text-sm ₹{getStatusColor(manager.status)}`}>
+                  <span className={`flex items-center space-x-1 px-3 py-1 rounded-full text-sm ${getStatusColor(manager.status)}`}>
                     {manager.status === "Active" && <UserCheck className="w-4 h-4" />}
                     {manager.status === "On Leave" && <Calendar className="w-4 h-4" />}
                     {manager.status === "Inactive" && <UserX className="w-4 h-4" />}
